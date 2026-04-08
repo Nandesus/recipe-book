@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Мои рецепты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>📖 Мои рецепты</h1>
+            <p>Домашняя кулинарная книга</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="Завтраки">🍳 Завтраки</button>
+            <button class="filter-btn" data-filter="Обеды">🍲 Обеды</button>
+            <button class="filter-btn" data-filter="Супы">🥣 Супы</button>
+            <button class="filter-btn" data-filter="Десерты">🍰 Десерты</button>
+        </div>
+
+        <div class="recipes-grid" id="recipesGrid">
+            <!-- Карточки рецептов будут подставлены из JavaScript -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>⭐ Приятного аппетита! Все рецепты авторские.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
